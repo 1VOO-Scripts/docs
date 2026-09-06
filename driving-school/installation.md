@@ -32,6 +32,18 @@ Download the <mark style="color:red;">DRIVING SCHOOL</mark> script file from key
 {% endstep %}
 
 {% step %}
+### Install the driving school Assets
+
+The school comes with its own map. Download <mark style="color:red;">devhub\_drivingSchool_assets</mark> from keymaster as well — it is a separate asset there — and move it into your `resources` folder alongside the script.
+
+{% hint style="danger" %}
+The map resource must keep the name **`devhub_drivingSchool_assets`** exactly, capital letters included.
+{% endhint %}
+
+The shipped instructor position and every course anchor are laid out for this map. Skip it and the school still runs, but it will be standing on the stock GTA map — move the instructor and the course anchors somewhere that suits it under <mark style="color:yellow;">/admindevhub → Driving School → Locations</mark>.
+{% endstep %}
+
+{% step %}
 ### Start resources
 
 Move the files to the `resources` folder on your server and add the following lines to your server.cfg in the correct order:
@@ -39,9 +51,13 @@ Move the files to the `resources` folder on your server and add the following li
 ```javascript
 ensure oxmysql
 ensure devhub_lib
-ensure devhub_licenses
+ensure devhub_drivingSchool_assets
 ensure devhub_drivingschool
 ```
+
+{% hint style="warning" %}
+Ensure the map **before** the script. The school places its instructor and course markers as it starts, and the ground they stand on has to exist first.
+{% endhint %}
 
 {% hint style="info" %}
 `devhub_licenses` is only needed if you use it as your licence system. The school also issues through ESX `user_licenses`, QB/QBOX metadata and vRP — remove that line if you are on one of those.
@@ -174,7 +190,7 @@ DO NOT CHANGE RESOURCE NAME
 
 ## <mark style="color:yellow;">**Checklist — connecting to devhub\_licenses**</mark>
 
-Steps 7 to 9 are the whole integration. If a licence is not printing, check them in this order:
+Steps 8 to 10 are the whole integration. If a licence is not printing, check them in this order:
 
 | # | What                                              | Where                                   |
 | - | ------------------------------------------------- | --------------------------------------- |
@@ -195,7 +211,7 @@ The school does not care what a licence *is* — it hands a name to devhub\_lib,
 * **QB / QBOX** — a metadata key.
 * **vRP** — a permission name.
 
-Steps 7 to 9 are devhub\_licenses only. On any other system, set the names in `shared/sh.config.lua` and you are done — the Categories line and the pickup clerk have no equivalent there.
+Steps 8 to 10 are devhub\_licenses only. On any other system, set the names in `shared/sh.config.lua` and you are done — the Categories line and the pickup clerk have no equivalent there.
 
 ***
 

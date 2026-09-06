@@ -36,7 +36,7 @@ Config.TrafficSpeed = {}
 
 * **Description**: Filled from the admin panel. A speed anywhere in a route is written `{ kph = 50, mph = 30 }` or as a plain number — **per unit rather than converted**, because 50 km/h converts to 31 and no road posts 31.
 * **Fields** *(set in the panel under* <mark style="color:yellow;">Scoring</mark>*)*:
-  * `units` — `kph` or `mph`. Which number is read from a step and shown on the HUD.
+  * `units` — `mph` (the shipped default) or `kph`. Which number is read from a step and shown on the HUD.
   * `sign` — the sign style. `auto` picks from the unit; use `eu` for the UK, which is the one case `auto` gets wrong.
 * **Note**: `{limit}` in a step's label is replaced with the number actually posted.
 

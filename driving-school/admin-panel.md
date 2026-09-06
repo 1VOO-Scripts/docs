@@ -42,7 +42,7 @@ Fault allowances and the sanity checks on a reported run.
 | Retry cooldown         | Wait after a failed or abandoned run. The result card counts it down.                                       |
 | Minimum run length     | A run reported faster than this cannot have been driven, and awards nothing.                                |
 | Late submission grace  | Slack over the course time limit before a result is thrown out.                                             |
-| Speed units            | Which of each sign's two numbers is posted. Changes the whole route at once.                                |
+| Speed units            | Which of each sign's two numbers is posted. Ships as **mph**; changes the whole route at once.              |
 | Speed sign style       | `Auto` picks US for mph and EU for km/h. Set EU explicitly for the UK.                                      |
 
 ***

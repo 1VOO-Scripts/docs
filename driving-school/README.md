@@ -60,12 +60,5 @@ Six licence classes — car, motorcycle, truck, boat, helicopter and plane — e
 | **Licence systems** | devhub\_licenses, ESX, QB, QBOX, vRP |
 | **Inventories** | qb-inventory, ox\_inventory |
 | **Live tuning** | Allowances, tolerances, fault points, tuition, time limits, the theory paper, the instructor and every course anchor |
-| **Requires** | [devhub\_lib](../scripts/devhub_lib-needed-for-each-script/), oxmysql |
-
-***
-
-## <mark style="color:yellow;">**What makes it fair**</mark>
-
-Driving is physics on the player's machine, so the client reports **which faults happened** and the server decides what they are worth — re-adding the points from its own config, checking the run was plausible, and recording every attempt either way. A run that could not have been driven is stored as unverified rather than dropped, so a pattern of them is visible afterwards.
-
-Everything else — enrolment, tuition, the theory grade, stage unlocking and the licence itself — is decided on the server outright. The theory answer key never leaves it.
+| **Includes** | `devhub_drivingSchool_assets` — the school's map, a separate download in your keymaster |
+| **Requires** | [devhub\_lib](../scripts/devhub_lib-needed-for-each-script/), oxmysql, [devhub\_licenses](../id-card-and-license/) (optional) |
