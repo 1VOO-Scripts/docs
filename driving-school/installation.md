@@ -49,6 +49,8 @@ The shipped instructor position and every course anchor are laid out for this ma
 Move the files to the `resources` folder on your server and add the following lines to your server.cfg in the correct order:
 
 ```javascript
+ensure oxmysql
+ensure devhub_lib
 ensure devhub_drivingSchool_assets
 ensure devhub_drivingschool
 ```
