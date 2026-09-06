@@ -32,12 +32,12 @@ Download the <mark style="color:red;">DRIVING SCHOOL</mark> script file from key
 {% endstep %}
 
 {% step %}
-### Install the driving school MLO
+### Install the driving school Assets
 
-The school comes with its own map. Download <mark style="color:red;">devhub\_drivingschoolMLO</mark> from keymaster as well — it is a separate asset there — and move it into your `resources` folder alongside the script.
+The school comes with its own map. Download <mark style="color:red;">devhub\_drivingSchool_assets</mark> from keymaster as well — it is a separate asset there — and move it into your `resources` folder alongside the script.
 
 {% hint style="danger" %}
-The map resource must keep the name **`devhub_drivingschoolMLO`** exactly, capital letters included.
+The map resource must keep the name **`devhub_drivingSchool_assets`** exactly, capital letters included.
 {% endhint %}
 
 The shipped instructor position and every course anchor are laid out for this map. Skip it and the school still runs, but it will be standing on the stock GTA map — move the instructor and the course anchors somewhere that suits it under <mark style="color:yellow;">/admindevhub → Driving School → Locations</mark>.
@@ -49,10 +49,7 @@ The shipped instructor position and every course anchor are laid out for this ma
 Move the files to the `resources` folder on your server and add the following lines to your server.cfg in the correct order:
 
 ```javascript
-ensure oxmysql
-ensure devhub_lib
-ensure devhub_licenses
-ensure devhub_drivingschoolMLO
+ensure devhub_drivingSchool_assets
 ensure devhub_drivingschool
 ```
 

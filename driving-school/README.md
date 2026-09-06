@@ -60,5 +60,5 @@ Six licence classes — car, motorcycle, truck, boat, helicopter and plane — e
 | **Licence systems** | devhub\_licenses, ESX, QB, QBOX, vRP |
 | **Inventories** | qb-inventory, ox\_inventory |
 | **Live tuning** | Allowances, tolerances, fault points, tuition, time limits, the theory paper, the instructor and every course anchor |
-| **Includes** | `devhub_drivingschoolMLO` — the school's map, a separate download in your keymaster |
+| **Includes** | `devhub_drivingSchool_assets` — the school's map, a separate download in your keymaster |
 | **Requires** | [devhub\_lib](../scripts/devhub_lib-needed-for-each-script/), oxmysql, [devhub\_licenses](../id-card-and-license/) (optional) |
